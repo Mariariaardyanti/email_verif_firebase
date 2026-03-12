@@ -1,11 +1,11 @@
 # Pengujian Email Verification Firebase Authentication menggunakan Postman
-**Nama :** Maria Euphrasia
-**NIM :** 1123150050
-**Kelas :** TI SE 23
+**Nama :** Maria Euphrasia  
+**NIM :** 1123150050  
+**Kelas :** TI SE 23  
 
-## 🔥 penjelasan
+## 🔥 Penjelasan
 
-Dokumentasi ini berisi panduan implementasi Email Verification menggunakan Firebase Authentication serta pengujian endpoint API menggunakan Postman.
+Dokumentasi ini berisi panduan implementasi Email Verification menggunakan Firebase Authentication serta pengujian endpoint API menggunakan Postman.  
 Tujuan dari pengujian ini adalah untuk memastikan bahwa proses autentikasi pengguna berjalan dengan benar sebelum diintegrasikan ke dalam aplikasi Flutter.
 
 ---
@@ -29,7 +29,7 @@ Pertama kita perlu membuat project baru di **Firebase Console**.
 
 ### Langkah-langkah
 
-1. Buka halaman
+1. Buka halaman  
    https://console.firebase.google.com
 
 2. Klik **Add Project**
@@ -40,11 +40,9 @@ Pertama kita perlu membuat project baru di **Firebase Console**.
 
 ### Tampilan pembuatan Project
 
-Tambahkan screenshot di sini
-
-```
 ![Create Firebase Project](/assets/images/1.png)
-```
+
+---
 
 # 2️⃣ Enable Authentication
 
@@ -56,9 +54,7 @@ Selanjutnya kita perlu mengaktifkan fitur **Authentication**.
 2. Pilih menu **Authentication**
 3. Klik **Get Started**
 
-```
 ![Firebase Authentication](/assets/images/2.png)
-```
 
 ### Mengaktifkan Email / Password
 
@@ -67,11 +63,11 @@ Selanjutnya kita perlu mengaktifkan fitur **Authentication**.
 3. Aktifkan **Enable**
 4. Klik **Save**
 
-```
 ![Enable Email Password](/assets/images/3.png)
-```
 
-## 3️⃣ Mendapatkan Firebase API Key
+---
+
+# 3️⃣ Mendapatkan Firebase API Key
 
 Untuk menggunakan Firebase REST API melalui Postman, kita perlu mendapatkan **Firebase API Key**.  
 API Key ini diperoleh ketika kita menambahkan **Web App** pada project Firebase.
@@ -87,9 +83,9 @@ API Key ini diperoleh ketika kita menambahkan **Web App** pada project Firebase.
 
 Setelah proses registrasi selesai, Firebase akan menampilkan konfigurasi aplikasi seperti berikut:
 
-```
 ![Firebase Settings](/assets/images/4.png)
-```
+
+---
 
 # 4️⃣ Login ke Postman
 
@@ -114,13 +110,11 @@ My Environment
 
 Tambahkan variable:
 
-| Variable         | Value            |
-| ---------------- | ---------------- |
+| Variable | Value |
+|---------|------|
 | FIREBASE_API_KEY | API KEY Firebase |
 
-```
 ![Setup Environment](/assets/images/5.png)
-```
 
 ---
 
@@ -158,15 +152,15 @@ Content-Type : application/json
 }
 ```
 
-```
 ![Register User](/assets/images/6.png)
-```
 
 ---
 
 ### Response Berhasil
+
 ![Register Success](/assets/images/7.png)
 
+---
 
 # 7️⃣ Mengirim Email Verification
 
@@ -187,16 +181,14 @@ POST https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key={{FIREBA
 }
 ```
 
-```
 ![Send Verification](/assets/images/8.png)
-```
 
 Setelah request berhasil, Firebase akan mengirim email verifikasi.
 
 Biasanya email akan masuk ke:
 
-* Inbox
-* Spam
+- Inbox
+- Spam
 
 Klik **Verify Email** untuk memverifikasi akun.
 
@@ -221,24 +213,31 @@ Setelah pengguna menekan tombol **Verify Email** pada email tersebut, Firebase a
 ---
 
 # 9️⃣ Cek Status Verifikasi Email
+
 Untuk mengecek apakah email sudah diverifikasi, kita bisa menggunakan endpoint berikut.
 
 ### Endpoint
-POST https://identitytoolkit.googleapis.com/v1/accounts:lookup?key={{FIREBASE_API_KEY}}
 
+```
+POST https://identitytoolkit.googleapis.com/v1/accounts:lookup?key={{FIREBASE_API_KEY}}
+```
 
 ### Body Request
+
+```
 {
 "idToken": "{{ID_TOKEN}}"
 }
+```
 
 ### Cek Status Verif
 
 Kemudian kita dapat melakukan pengecekan status verifikasi melalui Postman menggunakan endpoint **accounts:lookup**.  
 Jika email sudah diverifikasi maka response akan menampilkan nilai berikut:
 
+```
 "emailVerified": true
-
+```
 
 Berikut adalah hasil pengecekan status verifikasi email melalui Postman.
 
@@ -252,18 +251,14 @@ Dengan menggunakan Firebase Authentication dan Postman, kita dapat melakukan pen
 
 Proses yang dilakukan meliputi:
 
-* Setup Firebase Project
-* Mengaktifkan Authentication
-* Mendapatkan API Key
-* Registrasi User
-* Mengirim Email Verification
-* Verifikasi Email
-* Mengecek Status Verifikasi
+- Setup Firebase Project
+- Mengaktifkan Authentication
+- Mendapatkan API Key
+- Registrasi User
+- Mengirim Email Verification
+- Verifikasi Email
+- Mengecek Status Verifikasi
 
 Metode ini membantu memastikan sistem autentikasi berjalan dengan baik sebelum digunakan pada aplikasi mobile.
 
 ---
-
-
-
-
