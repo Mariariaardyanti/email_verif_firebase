@@ -22,3 +22,27 @@ Tujuan dari pengujian ini adalah untuk memastikan bahwa proses autentikasi pengg
 8. Cek Status Verifikasi Email
 
 ---
+
+# 1️⃣ Setup Firebase Project
+
+Pertama kita perlu membuat project baru di **Firebase Console**.
+
+### Langkah-langkah
+
+1. Buka halaman
+   https://console.firebase.google.com
+
+2. Klik **Add Project**
+
+3. Masukkan **Nama Project**
+
+4. Klik **Continue** hingga project selesai dibuat.
+
+### Tampilan pembuatan Project
+
+Tambahkan screenshot di sini
+
+```
+![Create Firebase Project](/assets/images/1.png)
+```
+
