@@ -168,4 +168,40 @@ Content-Type : application/json
 ![Register Success](/assets/images/7.png)
 
 
+# 7️⃣ Mengirim Email Verification
+
+Setelah user berhasil registrasi, kita perlu mengirim email verifikasi.
+
+### Endpoint
+
+```
+POST https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key={{FIREBASE_API_KEY}}
+```
+
+### Body Request
+
+```
+{
+  "requestType": "VERIFY_EMAIL",
+  "idToken": "{{ID_TOKEN}}"
+}
+```
+
+```
+![Send Verification](/assets/images/8.png)
+```
+
+Setelah request berhasil, Firebase akan mengirim email verifikasi.
+
+Biasanya email akan masuk ke:
+
+* Inbox
+* Spam
+
+Klik **Verify Email** untuk memverifikasi akun.
+
+---
+
+
+
 
