@@ -88,7 +88,7 @@ API Key ini diperoleh ketika kita menambahkan **Web App** pada project Firebase.
 Setelah proses registrasi selesai, Firebase akan menampilkan konfigurasi aplikasi seperti berikut:
 
 ```
-![Firebase Settings](/assets/images/3.png)
+![Firebase Settings](/assets/images/4.png)
 ```
 
 # 4️⃣ Login ke Postman
@@ -97,6 +97,31 @@ Setelah mendapatkan Firebase API Key, langkah berikutnya adalah membuka aplikasi
 
 ---
 
+# 5️⃣ Membuat Pengujian Baru di Postman
 
+### Langkah-langkah
+
+1. Buat **Collection**
+2. Buat **Environment**
+
+Klik **Environments → Create New**
+
+Ubah nama menjadi:
+
+```
+My Environment
+```
+
+Tambahkan variable:
+
+| Variable         | Value            |
+| ---------------- | ---------------- |
+| FIREBASE_API_KEY | API KEY Firebase |
+
+```
+![Setup Environment](/assets/images/5.png)
+```
+
+---
 
 
