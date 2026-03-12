@@ -212,6 +212,40 @@ Berikut adalah contoh email verifikasi yang diterima oleh pengguna.
 
 ---
 
+### Halaman Email Berhasil Diverifikasi
+
+Setelah pengguna menekan tombol **Verify Email** pada email tersebut, Firebase akan menampilkan halaman konfirmasi bahwa email telah berhasil diverifikasi.
+
+![Email Verified](/assets/images/10.png)
+
+---
+
+# 9️⃣ Cek Status Verifikasi Email
+Untuk mengecek apakah email sudah diverifikasi, kita bisa menggunakan endpoint berikut.
+
+### Endpoint
+POST https://identitytoolkit.googleapis.com/v1/accounts:lookup?key={{FIREBASE_API_KEY}}
+
+
+### Body Request
+{
+"idToken": "{{ID_TOKEN}}"
+}
+
+### Cek Status Verif
+
+Kemudian kita dapat melakukan pengecekan status verifikasi melalui Postman menggunakan endpoint **accounts:lookup**.  
+Jika email sudah diverifikasi maka response akan menampilkan nilai berikut:
+
+"emailVerified": true
+
+
+Berikut adalah hasil pengecekan status verifikasi email melalui Postman.
+
+![Status Verifikasi Email](/assets/images/11.png)
+
+---
+
 
 
 
