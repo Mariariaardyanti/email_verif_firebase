@@ -202,6 +202,17 @@ Klik **Verify Email** untuk memverifikasi akun.
 
 ---
 
+### Email Verifikasi Diterima
+
+Setelah request pengiriman verifikasi berhasil dilakukan melalui Postman, Firebase akan mengirimkan email verifikasi ke alamat email pengguna.
+
+Berikut adalah contoh email verifikasi yang diterima oleh pengguna.
+
+![Email Verification Inbox](/assets/images/9.png)
+
+---
+
+
 
 
 
