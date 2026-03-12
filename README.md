@@ -246,6 +246,23 @@ Berikut adalah hasil pengecekan status verifikasi email melalui Postman.
 
 ---
 
+# ✅ Kesimpulan
+
+Dengan menggunakan Firebase Authentication dan Postman, kita dapat melakukan pengujian API autentikasi sebelum mengimplementasikannya pada aplikasi Flutter.
+
+Proses yang dilakukan meliputi:
+
+* Setup Firebase Project
+* Mengaktifkan Authentication
+* Mendapatkan API Key
+* Registrasi User
+* Mengirim Email Verification
+* Verifikasi Email
+* Mengecek Status Verifikasi
+
+Metode ini membantu memastikan sistem autentikasi berjalan dengan baik sebelum digunakan pada aplikasi mobile.
+
+---
 
 
 
