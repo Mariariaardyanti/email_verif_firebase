@@ -71,3 +71,25 @@ Selanjutnya kita perlu mengaktifkan fitur **Authentication**.
 ![Enable Email Password](/assets/images/3.png)
 ```
 
+## 3️⃣ Mendapatkan Firebase API Key
+
+Untuk menggunakan Firebase REST API melalui Postman, kita perlu mendapatkan **Firebase API Key**.  
+API Key ini diperoleh ketika kita menambahkan **Web App** pada project Firebase.
+
+### Langkah-langkah
+
+1. Buka **Firebase Console**
+2. Masuk ke **Project Settings**
+3. Scroll ke bagian **Your Apps**
+4. Klik ikon **Web (</>)** untuk menambahkan aplikasi web
+5. Masukkan **nama aplikasi web**
+6. Klik **Register App**
+
+Setelah proses registrasi selesai, Firebase akan menampilkan konfigurasi aplikasi seperti berikut:
+
+```
+![Firebase Settings](/assets/images/3.png)
+```
+
+
+
