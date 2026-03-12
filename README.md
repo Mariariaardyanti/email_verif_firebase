@@ -124,4 +124,48 @@ Tambahkan variable:
 
 ---
 
+# 6️⃣ Registrasi User menggunakan Firebase REST API
+
+Pada tahap ini kita akan melakukan registrasi user baru menggunakan Firebase Authentication API.
+
+### Endpoint
+
+```
+POST https://identitytoolkit.googleapis.com/v1/accounts:signUp?key={{FIREBASE_API_KEY}}
+```
+
+### Setup Request di Postman
+
+**Method**
+
+```
+POST
+```
+
+**Headers**
+
+```
+Content-Type : application/json
+```
+
+**Body**
+
+```
+{
+  "email": "user@email.com",
+  "password": "12345678",
+  "returnSecureToken": true
+}
+```
+
+```
+![Register User](/assets/images/6.png)
+```
+
+---
+
+### Response Berhasil
+![Register Success](/assets/images/7.png)
+
+
 
