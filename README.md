@@ -46,3 +46,17 @@ Tambahkan screenshot di sini
 ![Create Firebase Project](/assets/images/1.png)
 ```
 
+# 2️⃣ Enable Authentication
+
+Selanjutnya kita perlu mengaktifkan fitur **Authentication**.
+
+### Langkah-langkah
+
+1. Pada sidebar Firebase klik **Build**
+2. Pilih menu **Authentication**
+3. Klik **Get Started**
+
+```
+![Firebase Authentication](/assets/images/2.png)
+```
+
