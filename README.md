@@ -91,5 +91,12 @@ Setelah proses registrasi selesai, Firebase akan menampilkan konfigurasi aplikas
 ![Firebase Settings](/assets/images/3.png)
 ```
 
+# 4️⃣ Login ke Postman
+
+Setelah mendapatkan Firebase API Key, langkah berikutnya adalah membuka aplikasi **Postman** untuk melakukan pengujian Firebase REST API.
+
+---
+
+
 
 
