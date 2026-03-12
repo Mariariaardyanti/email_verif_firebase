@@ -60,3 +60,14 @@ Selanjutnya kita perlu mengaktifkan fitur **Authentication**.
 ![Firebase Authentication](/assets/images/2.png)
 ```
 
+### Mengaktifkan Email / Password
+
+1. Masuk ke tab **Sign-in Method**
+2. Klik **Email/Password**
+3. Aktifkan **Enable**
+4. Klik **Save**
+
+```
+![Enable Email Password](/assets/images/3.png)
+```
+
